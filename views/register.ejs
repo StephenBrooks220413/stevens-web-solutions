@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header') -%>
+<body class="bg-layout">
+
+<%- include('layouts/nav') -%>
+
+<div class="home-intro">
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7 col-xl-6">
+                <div class="mask-custom">
+                    <div class="p-5 text-dark">
+
+                        <div class="my-3">
+
+                            <h2 class="text-center mb-5">Register Form</h2>
+
+                            <% if(errors != null && errors.length > 0) { %>
+                                <ul class="list-group mb-5">
+                                    <% for(let i = 0; i < errors.length; i++){ %>
+                                        <li class="list-group-item list-group-item-danger">
+                                            <%= errors[i] %>
+                                        </li>
+                                    <% } %>
+                                </ul>
+                            <% } %>
+
+                            <form action="/register/user" method="post" enctype="multipart/form-data">
+
+                                <!-- Email input -->
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" id="form3Example3" name="email" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example3">Email address</label>
+                                </div>
+
+                                <!-- Email input -->
+                                <div class="form-outline form-white mb-4">
+                                    <input type="text" id="form3Example3" name="username" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example3">Username</label>
+                                </div>
+
+                                <!-- Password input -->
+                                <div class="form-outline form-white mb-4">
+                                    <input type="password" id="form3Example4" name="password" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example4">Password</label>
+                                </div>
+
+                                <!-- Message input -->
+                                <div class="form-outline mb-4">
+                                    <textarea class="form-control" name="about" id="form4Example3" rows="4"></textarea>
+                                    <label class="form-label text-white" for="form4Example3">About You</label>
+                                </div>
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-light btn-block mb-4">Sign up</button>
+
+                                <!-- Register buttons -->
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('layouts/footer') -%>
+<%- include('layouts/scripts') -%>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header') -%>
+<body class="bg-layout">
+
+<%- include('layouts/nav') -%>
+
+<div class="home-intro">
+    <div class="container text-white w-75 space">
+        <h1 class="h1 text-white text-center mb-2">Share A Review</h1>
+        <div class="text-center">
+            <i class="fas icon fa-star"></i> <i class="fas icon fa-star"></i>
+            <i class="fas icon fa-star"></i> <i class="fas icon fa-star"></i>
+            <i class="fas icon fa-star"></i>
+        </div>
+        <!--Card content-->
+        <div class="card-body px-lg-5 pt-0">
+
+            <!-- Form -->
+            <form class="text-center" style="color: #757575;" action="/reviews/store" method="post" enctype="multipart/form-data">
+
+                <!-- Name -->
+                <div class="md-form mt-3">
+                    <input type="text" name="title" required id="materialContactFormName" class="form-control">
+                    <label for="materialContactFormName" class="text-white">Title</label>
+                </div>
+
+                <!-- Name -->
+                <div class="md-form mt-3">
+                    <input type="text" name="yourName" required id="materialContactFormName" class="form-control">
+                    <label for="materialContactFormName" class="text-white">Your Name</label>
+                </div>
+
+                <!-- Name -->
+                <div class="md-form mt-3">
+                    <input type="text" name="url" required id="materialContactFormName" class="form-control">
+                    <label for="materialContactFormName" class="text-white">Website Url</label>
+                </div>
+
+                <!-- E-mail -->
+                <div class="md-form">
+                    <input type="range" min="1" max="5" required name="rating" id="materialContactFormEmail" class="form-control">
+                    <label for="materialContactFormEmail" class="text-white">Review Rating (1 out of 5)</label>
+                </div>
+
+                <!--Message-->
+                <div class="md-form">
+                    <textarea id="materialContactFormMessage" required spellcheck="true" name="description" class="form-control md-textarea" maxlength="355" rows="7"></textarea>
+                    <label for="materialContactFormMessage" class="text-white">Describe the review</label>
+                </div>
+
+                <!-- Send button -->
+                <button class="btn btn-outline-white btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Send</button>
+
+            </form>
+            <!-- Form -->
+
+        </div>
+    </div>
+</div>
+
+<%- include('layouts/footer') -%>
+<%- include('layouts/scripts') -%>
+
+</body>
+</html>

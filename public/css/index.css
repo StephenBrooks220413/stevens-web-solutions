@@ -1,0 +1,65 @@
+.home-intro {
+    background: url('../img/hero-1.png')
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 30px;
+    color: white!important;
+}
+
+.intro-title {
+    padding-top: 290px;
+    padding-bottom: 250px;
+}
+
+.max-1 {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.max {
+    max-height: 180px;
+}
+
+.section {
+    background: url(https://images.unsplash.com/photo-1507297230445-ff678f10b524?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 90px;
+}
+
+.icon {
+    color: goldenrod;
+    padding: 5px;
+}
+
+.bg-layout {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 1%, rgba(150,143,143,1) 100%);
+}
+
+.space {
+    padding-top: 120px!important;
+}
+
+.text {
+    font-size: 20px!important;
+}
+
+.card-text {
+    color: black!important;
+}
+
+/****************************************************/
+
+.hideme
+{
+    opacity:0;
+}
+
+/****************************************************/

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header') -%>
+<body class="bg-layout">
+
+<%- include('layouts/nav') -%>
+
+<div class="home-intro">
+    <div class="container text-white w-75 space">
+        <h1 class="h1 text-white">Contact Me</h1>
+        <p class="lead mb-3">
+            580-309-0236 <br>
+            stephenbrooks714@gmail.com <br>
+            Lawton, Oklahoma
+        </p>
+        <form action="/contact/post" method="post" enctype="multipart/form-data">
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+                <input type="text" id="form4Example1" name="name" class="form-control" />
+                <label class="form-label text-white" for="form4Example1">Name</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" name="email" class="form-control" />
+                <label class="form-label text-white" for="form4Example2">Email address</label>
+            </div>
+
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+                <textarea class="form-control" name="message" id="form4Example3" rows="4"></textarea>
+                <label class="form-label text-white" for="form4Example3">Message</label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+        </form>
+
+        <br><br>
+    </div>
+</div>
+
+<%- include('layouts/footer') -%>
+<%- include('layouts/scripts') -%>
+
+</body>
+</html>

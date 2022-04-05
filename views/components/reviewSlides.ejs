@@ -1,0 +1,22 @@
+<div class="row hideme">
+    <%for(let i =0; i < reviews.length; i++){%>
+        <div class="col-md text-black hover-zoom">
+            <div class="card m-2 p-2">
+                <h5><%= reviews[i].title %></h5>
+                <p><%= reviews[i].yourName %></p>
+                <img src="https://media.istockphoto.com/photos/close-up-on-customer-man-hand-pressing-on-smartphone-screen-with-five-picture-id1303530194?b=1&k=20&m=1303530194&s=170667a&w=0&h=ukLDaFjMtkDjRMBX5sIx027Eu7OKYgaaEc5DyKFL5fc="
+                     class="img-fluid shadow-3-strong rounded"
+                     alt="<%= reviews[i].title %>">
+
+                <p>
+
+                    Rated <%= reviews[i].rating %> out of 5 stars
+                    Posted On <%= reviews[i].datePosted.toLocaleString() %>
+                </p>
+                <a class="btn btn-primary rounded-pill" target="_blank" href="<%= reviews[i].url %>">
+                    View Website
+                </a>
+            </div>
+        </div>
+    <%}%>
+</div>

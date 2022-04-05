@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('layouts/header') -%>
+  <body class="bg-layout">
+
+  <%- include('layouts/nav') -%>
+
+  <div class="home-intro">
+    <div class="container intro-title">
+      <div class="row text-center text-white">
+        <div class="col-12 p-3">
+          <h1 class="display-1 animate__animated animate__fadeInDown">Steve's Web Designs</h1>
+          <h4 class="animate__animated animate__fadeInUp">Your customized website builder for your online needs. </h4>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center mt-5 mb-5" id="container">
+      <h1 class="display-5 hideme">Our Services</h1>
+      <div class="row hideme is-visible row-cols-xl-auto text-center justify-content-center align-items-center mx-auto d-flex py-3 me-2">
+        <a href="https://www.wyzant.com/Tutors/OK/Lawton/9906802/" target="_blank" class="hover-zoom max-1">
+          <picture class="fw-bolder text-white">Coding Instructor</picture>
+          <img src="https://images.unsplash.com/photo-1507297230445-ff678f10b524?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="img-fluid shadow-lg rounded"
+               alt="img" />
+        </a>
+        <a href="#!" class="hover-zoom max-1">
+          <picture class="fw-bolder text-white">Authentic Web</picture>
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="img-fluid shadow-lg rounded"
+               alt="img" />
+        </a>
+        <a href="#!" class="hover-zoom max-1">
+          <picture class="fw-bolder text-white">Responsive Sites</picture>
+          <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="img-fluid shadow-lg rounded"
+               alt="img" />
+        </a>
+        <a href="#!" class="hover-zoom max-1">
+          <picture class="fw-bolder text-white">Website Templates</picture>
+          <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="img-fluid shadow-lg rounded"
+               alt="img" />
+        </a>
+      </div>
+    </div>
+
+    <div class="container" id="container-2">
+      <div class="row">
+        <div class="col-md hideme p-3">
+          <i class="fas icon fa-star"></i> <i class="fas icon fa-star"></i>
+          <i class="fas icon fa-star"></i> <i class="fas icon fa-star"></i>
+          <i class="fas icon fa-star"></i>
+          <h2>Voted Best Service</h2>
+          <p class="lead">
+            For the past 3 years we have been voted #1 by our clients and the most referred.
+            We build web sites, offer security, and always originality in our our work.
+          </p>
+          <a href="/createReview" class="btn btn-light rounded-pill">Want To Share A Review?</a>
+        </div>
+        <div class="col-md hideme p-3">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="img-fluid shadow-lg rounded-2"
+               alt="img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5 text-center">
+      <h1 class="display-5 hideme fw-bolder">Recent Reviews</h1>
+      <p class="lead hideme">
+        Come and experience why we are the most highly reviewed team web developers.
+      </p>
+      <%- include('components/reviewSlides') -%>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md hideme p-3">
+          <h2>Recent Project</h2>
+          <p class="lead">
+            Here's an example of a recent web template I created for a hair treatment Doctor. If
+            you want to see more, the click <a href="#!" class="fw-bold text-warning">here</a>.
+          </p>
+          <a href="https://hair-treatment.netlify.app/"
+             target="_blank"
+             class="btn btn-outline-white rounded-pill"
+          >
+            View this Website
+          </a>
+        </div>
+        <div class="col-md hideme p-3">
+          <img src="/img/hairTreatment.png"
+               class="img-fluid shadow-lg rounded-2"
+               alt="img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 mb-5">
+      <!-- Calendly link widget begin -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <a href="" class="btn btn-primary text rounded-pill w-50" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/stephenbrooks'});return false;">Schedule time us</a>
+      <!-- Calendly link widget end -->
+    </div>
+    <br>
+  </div>
+
+  <%- include('layouts/footer') -%>
+  <%- include('layouts/scripts') -%>
+
+  </body>
+</html>
