@@ -60,6 +60,7 @@ const profileController = require('./controllers/profile')
 const deleteProfileController = require('./controllers/deleteProfile')
 const reviewController = require('./controllers/newReview')
 const storeReviewController = require('./controllers/storeReview')
+const catalogController = require('./controllers/catalog')
 
 app.listen(process.env.PORT || 3000, () => {
     console.log('App listening')
@@ -79,5 +80,6 @@ app.get('/profile/:id', profileController)
 app.delete('/profile/delete/:id', deleteProfileController)
 app.get('/createReview', reviewController)
 app.post('/reviews/store', storeReviewController)
+app.get('/catalog', catalogController)
 
 app.use((req, res) => res.render('notFound'))
